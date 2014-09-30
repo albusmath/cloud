@@ -1,5 +1,6 @@
 *.pdf
 *.caj
 *.swp
+*.o
 a.out
 *~
