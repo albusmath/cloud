@@ -1,3 +1,5 @@
+CPP=g++
+
 all:
-	g++ -Wall -I/usr/local/include -c test.cpp -g
-	g++ -L/usr/local/lib test.o -lgsl -lgslcblas -lm -g
+	$(CPP) -Wall `gsl-config --cflags` -c test.cpp -g
+	$(CPP) test.o `gsl-config --libs` -lglut
