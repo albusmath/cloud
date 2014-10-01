@@ -1,7 +1,7 @@
 SRCDIR=.
 CPP=g++
 CFLAGS=-g -Wall -I/usr/include/eigen3
-LDLIBS=-lglut
+LDLIBS=-lglut -lGL -lGLU
 TARGETS=test
 
 all:$(TARGETS)
